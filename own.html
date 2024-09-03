@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #383838);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('6226460.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+            border: 2px solid #ff69b4;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff69b4;
+            text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #f8f8f8;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px #f8f8f8;
+        }
+
+        .decoration {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            position: absolute;
+            z-index: -1;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .decoration.one {
+            top: 10%;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .decoration.two {
+            bottom: 10%;
+            right: 25%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soory!</h1>
+        <p>There are no projects, I'm just a beginning programmer.</p>
+    </div>
+    <div class="decoration one"></div>
+    <div class="decoration two"></div>
+</body>
+</html>
